@@ -2,9 +2,9 @@ name: ModelN AppSec Scans
 
 on:
   push:
-    branches: [ "main","sprint", "feature/*" ] #Add protected branches to trigger the scan
+    branches: [ "main","feature/*" ] #Add protected branches to trigger the scan
   pull_request:
-    branches: [ "main", "sprint","feature/*" ] #Add protected branches to trigger the scan
+    branches: [ "main","feature/*" ] #Add protected branches to trigger the scan
   repository_dispatch:
     types: [scheduler]
   
